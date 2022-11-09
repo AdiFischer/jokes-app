@@ -31,7 +31,7 @@ export default function App() {
 //console.log(currentJokeIndex)
   return (
     <View style={styles.container}>
-      {jokeList
+      {jokeList && jokeList.length
       ?<>
       <Joke joke={jokeList[currentJokeIndex].setup} />
       <Punchline punchline={jokeList[currentJokeIndex].punchline} />
